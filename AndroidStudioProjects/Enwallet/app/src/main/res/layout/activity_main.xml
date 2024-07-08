@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivmoneyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="moneyinimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salary" />
+
+    <TextView
+        android:id="@+id/tvmoneyin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/money_in"
+        app:layout_constraintStart_toEndOf="@+id/ivmoneyin"
+        app:layout_constraintTop_toTopOf="@+id/ivmoneyin" />
+
+    <TextView
+        android:id="@+id/tvkshin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/kes_42400"
+        app:layout_constraintBottom_toBottomOf="@+id/ivmoneyin"
+        app:layout_constraintStart_toEndOf="@+id/ivmoneyin"
+        app:layout_constraintTop_toBottomOf="@+id/tvmoneyin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivmoneyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:contentDescription="moneyoutimage"
+        app:layout_constraintBottom_toBottomOf="@+id/ivmoneyin"
+        app:layout_constraintStart_toEndOf="@+id/tvmoneyin"
+        app:layout_constraintTop_toTopOf="@+id/ivmoneyin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/moneyout" />
+
+    <TextView
+        android:id="@+id/tvmoneyout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/money_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivmoneyout" />
+
+    <TextView
+        android:id="@+id/tvkshout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="@string/kes_23700"
+        app:layout_constraintBottom_toBottomOf="@+id/ivmoneyout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmoneyout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="balanceimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivmoneyin"
+        app:srcCompat="@drawable/balance" />
+
+    <TextView
+        android:id="@+id/tvbalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/balance"
+        app:layout_constraintStart_toEndOf="@+id/ivbalance"
+        app:layout_constraintTop_toTopOf="@+id/ivbalance" />
+
+    <TextView
+        android:id="@+id/tvkshbalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/kes_18700"
+        app:layout_constraintBottom_toBottomOf="@+id/ivbalance"
+        app:layout_constraintStart_toEndOf="@+id/ivbalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvbalance"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivtransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="transactionsimage"
+        app:layout_constraintBottom_toBottomOf="@+id/tvkshbalance"
+        app:layout_constraintStart_toEndOf="@+id/tvbalance"
+        app:layout_constraintTop_toBottomOf="@+id/ivmoneyout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/transactions" />
+
+    <TextView
+        android:id="@+id/tvtransactions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/transactions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivtransactions" />
+
+    <TextView
+        android:id="@+id/tvtransactnum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:text="@string/_8"
+        app:layout_constraintBottom_toBottomOf="@+id/ivtransactions"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="517dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivbalance" />
+</androidx.constraintlayout.widget.ConstraintLayout>

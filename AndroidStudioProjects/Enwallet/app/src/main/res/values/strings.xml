@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Enwallet</string>
+    <string name="money_in">MONEY IN</string>
+    <string name="kes_42400">KES 42400</string>
+    <string name="money_out">MONEY OUT</string>
+    <string name="kes_23700">KES 23700</string>
+    <string name="balance">BALANCE</string>
+    <string name="kes_18700">KES 18700</string>
+    <string name="transactions">TRANSACTIONS</string>
+    <string name="_8">8</string>
+</resources>
